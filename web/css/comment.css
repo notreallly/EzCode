@@ -1,0 +1,71 @@
+@charset "utf-8";
+*{
+}
+.herf,.btn{
+    font-weight:600;
+    font-size:14px; 
+    color:#FFFFFF; 
+    border: 0 none; 
+    cursor: pointer; 
+    border-radius: 5px;
+    margin:5px 10px 0 6px;
+    padding:6px 8px;
+}
+.herf{
+    position:fixed;
+    top:88.5%;
+    right:4%;
+    background:rgba(63, 17, 198,0.8);
+    text-decoration:none;
+    font-size: 16px;
+}
+.btnComment{
+    width:60px;
+    background:rgba(0, 95, 191, 0.890);
+}
+/*
+.table{
+    margin:auto;
+}
+.table table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width:100%;
+}
+table tr:last-child td:last-child {
+    border-bottom-right-radius:9px;
+}
+table tr:first-child td:first-child {
+    border-top-left-radius:9px;
+}
+table tr:first-child td:last-child {
+    border-top-right-radius:9px;
+}
+table tr:last-child td:first-child{
+    border-bottom-left-radius:9px;
+}
+table tr:last-child td{
+    border-width:0px 1px 0px 0px;
+}
+table tr td:last-child{
+    border-width:0px 0px 1px 0px;
+}
+table tr:last-child td:last-child{
+    border-width:0px 0px 0px 0px;
+}
+table tr:first-child td{
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#005fbf", endColorstr="#005fbf"); 
+    background-color:#005fbf;
+    text-align:center;
+    font-size:20px;
+    font-family:Arial, 微軟正黑體;
+    font-weight:bold;
+    color:#ffffff;
+}*/
+.content{
+    display: none;
+}
+
+textarea{
+    resize: none;
+}

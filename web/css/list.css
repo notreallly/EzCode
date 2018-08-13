@@ -1,0 +1,57 @@
+@charset "utf-8";
+* {
+	font-family: 'Noto Sans TC', "Segoe UI", "Microsoft JhengHei", "微軟正黑體",
+		sans-serif;
+	outline: none;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #E7E7E7;
+	display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+table {
+	border-radius: 6px;
+	table-layout: fixed;
+	word-break: break-all;
+	margin: 0 auto;
+	border: solid #666;
+	border-spacing: 0;
+	background-color: #eaf5ff;  
+	color: #444;
+}
+
+#th1 {
+	width: 30px;
+}
+
+th, td {
+	padding: 5px;
+	border-bottom: 1px solid #ccc;
+}
+
+th {
+	font-size: 25px;
+}
+
+td {
+	padding-left: 2px;
+	font-size: 18px;
+	text-align: center;
+}
+td a{
+    text-decoration:none;
+}
+tr:hover {
+	background-color: #9fedfc;
+}
+
+.backAdmin {
+	position: fixed;
+	top: 85%;
+	left: 5%;
+	width: 180px;
+}

@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+    <head>
+        <meta HTTP-EQUIV="pragma" CONTENT="no-cache">
+        <meta HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">
+        <meta HTTP-EQUIV="expires" CONTENT="0">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <link href="css/jquery-ui.structure.min.css" rel="stylesheet"
+              type="text/css">
+        <link href="css/jquery-ui.theme.min.css" rel="stylesheet"
+              type="text/css">
+        <link href="css/index.css" rel="stylesheet" type="text/css">
+        <script src="js/menu.js"></script>
+        <script src="js/index.js"></script>
+
+        <title>EzCode</title>
+    </head>
+
+    <body>
+        <div id="header">
+            <div><h3>EzCode</h3></div>
+            <div id="menu">
+                <div class="box boxLogin">
+                    <a id="menuLogin" href="javascript: void(0)">登 入</a>
+                </div>
+                <div class="box boxSignUp">
+                    <a id="menuSignUp" href="javascript: void(0)">註 冊</a>
+                </div>
+                <div class="box boxLogOut">
+                    <a id="menuLogOut" href="javascript: void(0)">登 出</a>
+                </div>
+                <div class="box boxProfile">
+                    <a id="menuSearchProfile" href="javascript: void(0)">會員資料</a>
+                </div>
+                <div class="box boxAdministrator">
+                    <a id="menuAdministrator" href="administrator.jsp">後臺維護</a>
+                </div>
+            </div>
+        </div>
+        <div id="content">
+            <div class="board">
+                <h2 id="toggleBoard">X</h2>
+                <iframe id="frm_board" src="DisplayPublisherServlet?index=0"
+                        frameborder="0"></iframe>
+            </div>
+            <div class="coding">
+                <div id="loadfile" class="loadfile">
+                    <h2>é</h2>
+                </div>
+                <iframe id="frm_coding" src="coding.html" scrolling="no"
+                        frameborder="0"> </iframe>
+                <span id="message"></span>
+            </div>
+            <div class="result">
+                <iframe id="frm_result" src="result.html" frameborder="0"></iframe>
+            </div>
+        </div>
+        <div id="footer">
+            <h5>Copyright &copy; 2018 EZCode&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;建議使用瀏覽器軟體 Google Chrome、Firefox，並搭配 1024 x 768 以上之螢幕解析度，以獲得最佳瀏覽體驗。</h5>
+        </div>
+        <div id="dialogpublish" title="發布程式碼">
+            <form>
+                <fieldset>
+                    <label>標題:</label> <input id="title" type="text"
+                                              class="text ui-widget-content ui-corner-all"> <label>內容描述:</label>
+                    <textarea id="description" cols="102" rows="39"></textarea>
+                </fieldset>
+            </form>
+        </div>
+        <div id="dialogLogin" title="會員登入">
+            <p class="validateTips">登入您的帳戶</p>
+            <form id="dialogLoginForm">
+                <fieldset>
+                    <label>帳號:</label> <input type="email" id="LoginMail"
+                                              placeholder="請輸入帳號(信箱)"
+                                              class="text ui-widget-content ui-corner-all"> <label>密碼:</label>
+                    <input type="password" id="LoginPassword" placeholder="請輸入密碼"
+                           class="text ui-widget-content ui-corner-all">
+                </fieldset>
+            </form>
+        </div>
+        <div id="dialogSignUp" title="會員註冊">
+            <p class="validateTips">請填寫所有欄位</p>
+            <form>
+                <fieldset>
+                    <label>暱稱:</label> <input type="text" id="SignUpName"
+                                              placeholder="3至20字英數組成"
+                                              class="text ui-widget-content ui-corner-all"> <label>帳號:</label>
+                    <input type="email" id="SignUpMail" placeholder="請輸入有效信箱"
+                           class="text ui-widget-content ui-corner-all"> <label>密碼:</label>
+                    <input type="password" id="SignUpPW"
+                           placeholder="6至20個英數組合，英文為首，大小寫有區別"
+                           class="text ui-widget-content ui-corner-all"> <label>確認密碼:</label>
+                    <input type="password" id="SignUpConfirmPW" placeholder="請再次輸入密碼"
+                           class="text ui-widget-content ui-corner-all" value="">
+                </fieldset>
+            </form>
+        </div>
+        <div id="dialogSearchProfile" title="會員資料">
+            <p class="validateTips">更改暱稱或設定新密碼</p>
+            <form id="profileForm" name="profileForm">
+                <fieldset>
+                    <label>帳號:</label> <input type="email" id="profileMail"
+                                              class="text ui-widget-content ui-corner-all" DISABLED> <label>暱稱:</label>
+                    <input type="text" id="profileName"
+                           class="text ui-widget-content ui-corner-all"> <label>原密碼:</label>
+                    <input type="password" id="profilePW" placeholder="必填，請輸入密碼"
+                           class="text ui-widget-content ui-corner-all"> <label>新密碼:</label>
+                    <input type="password" id="profileNewPW" name="profileNewPW"
+                           placeholder="請輸入新密碼" class="text ui-widget-content ui-corner-all"
+                           value=""> <label>確認新密碼:</label> <input type="password"
+                           id="profileConfirmPW" placeholder="請再次輸入新密碼"
+                           class="text ui-widget-content ui-corner-all" value="">
+                </fieldset>
+            </form>
+        </div>
+        <div id="dialogSearchPW" title="忘記密碼">
+            <p class="validateTips">請填寫信箱</p>
+            <form>
+                <fieldset>
+                    <label>帳號:</label> <input type="email" id="mail1"
+                                              class="text ui-widget-content ui-corner-all">
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>

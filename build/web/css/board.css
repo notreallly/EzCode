@@ -1,0 +1,69 @@
+@charset "utf-8";
+* {
+    font-family: 'Noto Sans TC', "Segoe UI", "Microsoft JhengHei", "微軟正黑體",
+        sans-serif;
+    outline: none;
+    margin: 0;
+    padding: 0;
+
+}
+.table{
+}
+.table table {
+    width:100%;
+    border-radius: 6px;
+    table-layout: fixed;
+    word-break: break-all;
+    margin: 0 auto;
+    border: solid #666;
+    border-spacing: 0;
+    background-color: #eaf5ff;  
+    color: #444;
+}
+
+.title{
+    display:none;
+}
+
+#th1 {
+    width: 30px;
+}
+
+th, td {
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+th {
+    background-color:#005fbf;
+    text-align:center;
+    font-size:20px;
+    font-family:Arial, 微軟正黑體;
+    font-weight:bold;
+    color:#ffffff;
+}
+
+td {
+    padding-left: 2px;
+    font-size: 15px;
+    text-align: center;
+    vertical-align:middle;
+    font-family:Arial,微軟正黑體;
+    font-weight:normal;
+    color:#000000;
+    background-color:#e5e5e5;
+
+}
+td a{
+    text-decoration:none;
+    color:#005fbf;
+    font-weight:600;
+}
+tr:hover {
+    background-color: #9fedfc;
+}
+#page{
+    padding:15px 2px 15px 30px;
+    font-weight:600;
+    font-size:18px;
+}

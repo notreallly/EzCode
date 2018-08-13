@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/coding.js"></script>
+        <link href="css/coding.css" rel="stylesheet" type="text/css">
+        <title>coding</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="header">
+                <button class="btn" id="save" type="button">儲存檔案</button>
+                <button class="btn" id="delete" type="button">刪除檔案</button>
+                <button class="btn" id="publish" type="button">發佈檔案</button>
+            </div>
+            <div class="content">
+                <textarea  id="txt">public class HelloWorld { 
+    public static void main(String[] args) {
+        System.out.println("Hello! World!");
+    }   
+}</textarea>
+                <div id="modified">未修改</div>
+            </div>
+            <div class="footer">
+                <button  class="btn" id="execute" type="button">執行</button>
+            </div>
+        </div>
+    </body>
+</html>

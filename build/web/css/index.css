@@ -1,0 +1,252 @@
+@charset "utf-8";
+@font-face{
+    font-family: sosa;
+    src:url(../font/sosa-regular-webfont.ttf);
+}
+
+* {
+    outline:none;
+    font-family: 'Noto Sans TC', "Segoe UI", "Microsoft JhengHei", "微軟正黑體","sans-serif";
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color:#005fbf;
+    height:810px;
+}
+#content{
+    height:810px;   
+}
+#header {
+    position: relative; 	
+}
+
+#header h3 {
+    width:100px;
+    color: #FFFFFF;
+    font-size:38px;
+    margin:10px 0 5px 35px;
+   
+}
+
+#header h4 {
+    position: absolute;
+    right: 60px;
+    top: -25px;
+    display: block;
+}
+/*選單*/
+.box{
+    position: absolute;
+    float:right; 
+    font-size: 18px;
+    top: -13px;
+    margin:5px 10px 0 0;
+    font-family:"微軟正黑體", "Microsoft JhengHei", "新細明體", "PMingLiU", "細明體", "MingLiU", "標楷體", "DFKai-sb", serif;
+    font-weight:600;
+    
+}
+.box a{
+    display: block;
+    color:#FFFFFF;    
+    height: 50px;
+    text-align: center;
+    line-height: 55px;
+    margin:3px;
+    text-decoration: none;
+    border:ridge transparent 2px;  
+}
+.box a:hover{
+    border:ridge #FFFFFF 2px;
+    border-radius: 6px;
+    color: #FFFFFF;
+}
+/*選單_登入*/
+.boxLogin{
+    right: 280px;
+}
+.boxLogin a{
+    width: 70px;
+}
+/*選單_註冊*/
+.boxSignUp{
+    right: 130px;
+}
+.boxSignUp a{
+    width: 70px;
+}
+/*選單_登出*/
+.boxLogOut{
+    /*display:none;       /*進入畫面時預設關閉*/
+    right: 120px;
+}
+.boxLogOut a{
+    width: 70px;
+}
+/*選單_會員資料*/
+.boxProfile{
+    /*display:none;       /*進入畫面時預設關閉*/
+    right: 270px;
+}
+.boxProfile a{
+    width: 90px;
+}
+/*選單_後臺維護*/
+.boxAdministrator{
+    right: 10px;
+}
+.boxAdministrator a{
+    width: 90px;
+}
+
+#footer { 
+}
+
+#footer h5 {
+    margin:30px 0 15px 30px;
+    height:20px;
+    color: #FFFFFF;
+    font-size:13px;
+}
+
+#content {
+    display: flex;
+}
+
+#content div iframe {
+    width: 100%;    
+}
+
+.loadfile{
+    width: 30px;
+    transition: all .3s ease-in-out;
+}
+
+.loadfile h2{
+    font-family: sosa;
+    color: black;
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.loadfile p{
+    cursor: pointer;
+}
+
+.loadfile span{
+    font-family: sosa;
+}
+
+.coding {
+    display: flex;
+    background-color:#FFFFFF;
+    width: 47%;
+    transition: all .3s ease-out;
+    position: relative;
+}
+.coding #message{
+    position:absolute;
+    right:5%;
+    top:78%;
+    display: none;
+    color:#000000;
+    border:3px rgba(232, 27, 27,0.8) solid;
+    border-radius:15%; 
+    padding:5px;
+    font-family:Arial, 微軟正黑體;
+}
+
+.result {
+    background-color:#FFFFFF;
+    transition: all .3s ease-out;
+    width: 47%;
+}
+
+.board {
+    background-color:#FFFFFF;
+    transition: all 0.3s ease-out;
+    width: 6%;
+}
+.board iframe {
+    display: none;
+    height:765px;
+}
+
+.board:hover{
+    background-color:rgba(234, 232, 232,0.9);
+    cursor: pointer;
+}
+.board #toggleBoard {
+    display: none;
+    float: right;
+    text-align: center;
+    font-size: 24px; 
+    height: 25px;
+    width: 26px;
+    line-height: 25px;
+    margin:10px 15px 10px 0;
+    background-color:white;
+    font-weight:900; 
+}
+.board #toggleBoard:hover{
+    background-color: rgba(249, 182, 87,0.9);
+    cursor: pointer;
+}
+
+.isBoard .board {
+    width: 35%;
+    cursor: default;
+}
+
+.isBoard .coding {
+    width: 40%;
+}
+
+.isBoard .result {
+    width: 25%;
+}
+
+.isloadfile{
+    width: 150px;
+}
+
+/*選單對話框*/
+label, input { 
+    display:block;
+    font-size:16px;
+}
+
+label{
+    margin-bottom: 5px;
+}
+
+input.text { 
+    margin-bottom:12px; 
+    width:95%; 
+    padding: .4em; 
+}
+
+fieldset { 
+    padding:0; 
+    border:0; 
+    margin-top:15px; 
+}
+
+.ui-dialog-titlebar-close {
+    display: none
+}
+
+.validateTips {
+    border: 1px solid transparent;
+    padding: 0.3em;
+}
+.ui-dialog .ui-state-error {
+    padding: 0.3em;
+}
+
+#description{
+    resize: none;
+}
