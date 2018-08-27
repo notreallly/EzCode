@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import model.PublisherManager;
 
-@WebServlet("/AdminPublisherListServlet")
+@WebServlet(name = "AdminPublisherListServlet", urlPatterns = {"/AdminPublisherListServlet"})
 public class AdminPublisherListServlet extends HttpServlet {
 	
 	protected void processRequest(HttpServletRequest request, HttpServletResponse response)

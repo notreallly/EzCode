@@ -9,8 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import model.MemberManager;
 
-
-@WebServlet(urlPatterns = {"/AdminMemberListServlet"})
+@WebServlet(name = "AdminMemberListServlet", urlPatterns = {"/AdminMemberListServlet"})
 public class AdminMemberListServlet extends HttpServlet {
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)

@@ -427,13 +427,12 @@ $(function () {
                             password: pPW,
                             newpassword: pNPW
                         }, function (response) {
-                            var array = response.split(" ");
-                            if (array[0] === "暱稱與密碼修改失敗，請重新輸入") {
-                                updateError(array[0]);
+                            if (response === "暱稱與密碼修改失敗，請重新輸入") {
+                                updateError(response);
                                 profileName.addClass("ui-state-error");
                                 profilePW.addClass("ui-state-error");
-                            } else if (array[0] === "密碼不正確") {
-                                updateError(array[0]);
+                            } else if (response === "密碼不正確") {
+                                updateError(response);
                                 profilePW.addClass("ui-state-error");
                             } else {
                                 alert("暱稱密碼修改成功!");
@@ -454,12 +453,11 @@ $(function () {
                             nickname: pName,
                             password: pPW
                         }, function (response) {
-                            var array = response.split(" ");
-                            if (array[0] === "暱稱修改失敗，請重新輸入") {
-                                updateError(array[0]);
+                            if (response === "暱稱修改失敗，請重新輸入") {
+                                updateError(response);
                                 profileName.addClass("ui-state-error");
-                            } else if (array[0] === "密碼不正確") {
-                                updateError(array[0]);
+                            } else if (response === "密碼不正確") {
+                                updateError(response);
                                 profilePW.addClass("ui-state-error");
                             } else {
                                 alert("暱稱修改成功!");

@@ -10,10 +10,6 @@ import java.util.concurrent.TimeUnit;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-/**
- *
- * @author Yijer
- */
 public class Execute {
 
     private static final Pattern PATH_REGEX = Pattern.compile("(C:\\\\code\\\\\\w+\\\\)(.*)");

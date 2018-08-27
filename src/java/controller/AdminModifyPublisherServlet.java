@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import model.PublisherManager;
 
-@WebServlet("/AdminModifyPublisherServlet")
+@WebServlet(name = "AdminModifyPublisherServlet", urlPatterns = {"/AdminModifyPublisherServlet"})
 public class AdminModifyPublisherServlet extends HttpServlet {
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
